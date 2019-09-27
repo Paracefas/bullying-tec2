@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/material.min.css">
+<script src="css/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise one</title>
+</head>
+<style>
+.demo-layout-transparent {
+  background: url('images/fondo.jpg') center / cover;
+  style="width:100%;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+</style>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">DAVID TIENE MALOS MODALES</h3></div>
+      <a href="AIindex.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="button">Volver</a>
+	  </span>
+      <main class="mdl-layout__content">
+          <img src="images/B19.png" alt="Smiley face" width="300" height="450" style="float: right; padding-right:400px;">
+          <ul style="list-style-type:square;">
+              <li><p><b>Conversá</b> con tu maestra o maestro.</p></li>
+              <ul style="list-style-type:circle;">
+                  <li><div class="page-content"><p>¿Qué significa tener malos modales?</p></div></li>
+                  <form id="copia" name="copia">
+                      <div id="aplicacion">
+                          <p><b>{{desorden}}</b></p>
+                          <p>
+                              <input type="radio" name=preg1 value="Significa nos vemos como personas mal educadas" v-model="desorden">
+                              <label for="desorden">Significa nos vemos  mal educados y sucios</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg1 value="Significa somos limpios" v-model="desorden">
+                              <label for="desorden">Significa somos limpios</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg1 value="Significa ser un niño bueno" v-model="desorden">
+                              <label for="desorden">Significa ser un niño bueno</label>
+                          </p>
+                      </div>
+                      <li><div class="page-content"><p>¿Comó creés que se siente la compañera de David?</p></div></li>
+                      <div id="aplicacion2">
+                          <p><b>{{desorden2}}</b></p>
+                          <p>
+                              <input type="radio" name=preg2 value="Su compañera se siente comoda con eso" v-model="desorden2" id="no se">
+                              <label for="desorden2">Su compañera se siente comoda con eso</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg2 value="Su compañera se siente incomoda con eso" v-model="desorden2" id="no se">
+                              <label for="desorden2">Su compañera se siente incomoda con eso</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg2 value="A ella le da lo mismo" v-model="desorden2" id="no se">
+                              <label for="desorden2">A ella le da lo mismo</label>
+                          </p>
+                      </div>
+                      <li><div class="page-content"><p>¿Qué debería hacer David para que su compañera se sintiera mejor ?</p></div></li>
+                      <div id="aplicacion3">
+                          <p><b>{{desorden3}}</b></p>
+                          <input type="radio" name=preg3 value="Deberia Tener buenos modales" v-model="desorden3" id="no se">
+                          <label for="desorden3">Deberia Tener buenos modales</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg3 value="Deberia dejar de preocuparse por los demas" v-model="desorden3" id="no se">
+                              <label for="desorden3">Deberia dejar de preocuparse por los demas</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg3 value="Seguir haciendo lo de siempre" v-model="desorden3" id="no se">
+                              <label for="desorden3">Seguir haciendo lo de siempre</label>
+                          </p>
+                      </div>
+              
+              </ul>
+          </ul>
+          <a type="button" value="Juego 2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="Alone.html">Juego 1</a>. 
+          <a type="button" value="Atras" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="IndexIndex.html">Atras</a> 
+      </main>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+  <script src="js/vue.js"></script>
+  <script type="text/javascript" src="js/ZebraFP_2.js"></script>
+</body>
+</html>

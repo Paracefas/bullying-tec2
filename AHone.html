@@ -1,0 +1,208 @@
+﻿<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/material.min.css">
+<script src="css/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="Zebra_Dialog-master/dist/zebra_dialog.min.js"></script>
+<link href="Zebra_Dialog-master/dist/css/materialize/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+
+<script src="Zebra.js"> </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 1</title>
+</head>
+<style>
+.demo-layout-transparent {
+  background: url('images/fondo3.jpg') center / cover;
+  style=width:100%;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+</style>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<center><div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">BENICIO Y PILAR</h3></div></center>
+	  </span>
+      <main class="mdl-layout__content">
+          <ul style="list-style-type:square;">
+            <center><a href="AHindex.html"><img src="images/logo.jpg" width="100" height="100"></a></center>
+
+<p><h3><center> Ejer.1 - BENICIO COMETE UN ERROR Y PILAR SE RIE A CARCAJADAS </center></h3></p><br>
+
+<form id = "Quiz" name = "Quiz">
+        <br>
+         <div id="aplicacion">
+        <p><h4><center>1) ¿Que hace Pilar?</center></h4></p>
+        
+         
+        <span>
+       
+      <center><input type="radio" name="preg1" value="Ayudando a su compañero" v-model="pr" id="ans"></center>
+      <center><label for="ans">Ayudando a su compañero</label></center>
+          <br>
+      <center><input type="radio" name="preg1" value="Se ríe de su compañero" v-model="pr" id="ans"></center>
+      <center><label for="ans">Se ríe de su compañero</label></center>
+          <br>
+          
+             <br> 
+
+                                <br>
+                  <p><center><strong>Su respuesta es: {{pr}}</strong></center></p>
+               <br> <br>
+      </div>
+        </span>
+
+        <div id="aplicacion2"> 
+        <p><h4><center>2) ¿Por qué lo hace?</center></h4></p>
+        
+         
+            <span>
+          
+      <center> <input type="radio" name="preg2" value="Porque es divertido" v-model="pr2" id="ans"></center>
+      <center><label for="ans2">Porque es divertido</label></center>
+          <br>
+     <center> <input type="radio" name="preg2" value="Porque se equivocó" v-model="pr2" id="ans"></center>
+      <center><label for="ans2">Porque se equivocó</label></center>
+          <br>     
+      <center><input type="radio" name="preg2" value="Porque no le gusta" v-model="pr2" id="ans"></center>
+      <center><label for="ans2">Porque no le gusta</label></center>
+             <br> 
+      
+             <br> 
+                  <br>  
+                  <p><center><strong>Su respuesta es: {{pr2}}</strong></center></p>
+                   <br> <br>
+      </div>
+            </span>
+
+        <div id="aplicacion3">     
+        <p><h4><center>3) ¿Qué le ocurrió a Benicio?</center></h4></p>
+
+        <span>
+          
+       <center><input type="radio" name="preg3" value="Se confundió" v-model="pr3" id="ans"></center>
+       <center><label for="ans3">Se confundió</label></center>
+          <br>
+     <center> <input type="radio" name="preg3" value="Hizo todo bien" v-model="pr3" id="ans"></center>
+      <center><label for="ans3">Hizo todo bien </label></center>
+          <br>     
+
+             <br> 
+      
+             <br> 
+                  <br>
+                  <p><center><strong>Su respuesta es: {{pr3}}</strong></center></p>
+                   <br> <br>
+      </div>
+            </span>
+
+            <div id="aplicacion4">     
+        <p><h4><center>4) ¿Alguna vez te pasó lo mismo que a Benicio?<center></h4></p>
+
+        <span>
+          
+      <center><input type="radio" name="preg4" value="Sí" v-model="pr4" id="ans"></center>
+      <center><label for="ans4">Sí</label></center>
+          <br>
+      <center><input type="radio" name="preg4" value="No" v-model="pr4" id="ans"></center>
+      <center><label for="ans4">No</label></center>
+          <br>     
+
+             <br> 
+      
+             <br> 
+                  <br>
+                  <p><center><strong>Su respuesta es: {{pr4}}</strong></center></p>
+                   <br> <br>
+      </div>
+            </span>
+
+             <div id="aplicacion5">     
+        <p><h4><center>5) ¿Cómo te sentiste?<center></h4></p>
+
+        <span>
+          
+      <center><input type="radio" name="preg5" value="Mal" v-model="pr5" id="ans"></center>
+      <center><label for="ans5">Mal</label></center>
+          <br>
+      <center><input type="radio" name="preg5" value="Bien" v-model="pr5" id="ans"></center>
+      <center><label for="ans5">Bien</label></center>
+          <br>     
+
+             <br> 
+      
+             <br> 
+                  <br>
+                  <p><center><strong>Su respuesta es: {{pr5}}</strong></center></p>
+                   <br> <br>
+      </div>
+            </span>
+        
+
+<p>
+<a role="button" href="AHtwo.html" rel="next" class="mdl-button mdl-js-button mdl-js-ripple-effect"style='float:right'>Ejercicio 2</a>
+</p>
+ 
+          <script src="js/vue.js"></script>
+           
+                   <input id= "button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"type= "button"  value= "Comprobar" onClick="comprobar();"></input>
+    
+    <input name="restablecer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset"></input>
+    
+<p><br>
+</p>
+  </div>
+  <script src="js/vue.js"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        pr:'No se'
+      }
+    })
+  </script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion2',
+    data:{
+      pr2:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion3',
+    data:{
+      pr3:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion4',
+    data:{
+      pr4:'No me acuerdo'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion5',
+    data:{
+      pr5:'Ninguna de las dos'
+    }
+  })
+</script>
+</body>
+</html>

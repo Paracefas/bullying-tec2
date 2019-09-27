@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/material.min.css">
+<script src="css/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 1</title>
+</head>
+<style>
+.demo-layout-transparent {
+  background: url('images/fondo.jpg') center / cover;
+  style="width:100%;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+</style>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">TAMARA SE QUEDA CON LAS COSAS QUE SON DE LOS DEMAS</h3></div>
+	  </span>
+
+      <main class="mdl-layout__content">
+        <form action="AEindex.html">
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" >
+              Volver
+            
+          </button>
+          </form>
+          <img src="images/tmr.png" alt="Smiley face" width="300" height="450" style="float: right; padding-right:400px;">
+          <ul style="list-style-type:square;">
+              <li><p><b>Conversá</b> con tu maestra o maestro.</p></li>
+              <ul style="list-style-type:circle;">
+                  <li><div class="page-content"><p>¿Qué esta haciendo Tamara ?</p></div></li>
+                  <form id="copia" name="copia">
+                      <div id="aplicacion">
+                          <p><strong>{{desorden}}</strong></p>
+                          <p>
+                              <input type="radio" name=preg1 value="Esta tomando una moneda" v-model="desorden">
+                              <label for="desorden">Esta tomando una moneda</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg1 value="Esta Comiendo" v-model="desorden">
+                              <label for="desorden">Esta Comiendo</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg1 value="No esta haciendo nada" v-model="desorden">
+                              <label for="desorden">No esta haciendo nada</label>
+                          </p>
+                      </div>
+                      <li><div class="page-content"><p>¿Por qué lo hace? Elegi entre estas respuestas </p></div></li>
+                      <div id="aplicacion1">
+                          <p><strong>{{desorden1}}</strong></p>
+                          <p>
+                              <input type="radio" name=preg2 value="Porque encontro la moneda y la que se encuentra no es de nadie" v-model="desorden1" id="no se">
+                              <label for="desorden1">Porque encontro la moneda y la que se encuentra no es de nadie</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg2 value="Porque no tiene monedas para el recreo" v-model="desorden1" id="no se">
+                              <label for="desorden1">Porque no tiene monedas para el recreo</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg2 value="Porque otros chicos hacen lo mismo" v-model="desorden1" id="no se">
+                              <label for="desorden1">Porque otros chicos hacen lo mismo</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg2 value="Porque su compañero es muy distraido" v-model="desorden1" id="no se">
+                              <label for="desorden1">Porque su compañero es muy distraido</label>
+                          </p>
+                      </div>
+
+                      <li><div class="page-content"><p>Lee y completa las oraciones</p></div><br></li>
+
+                      <li><div class="page-content"><p>Al encontrar la moneda, Tamara deberia...</p></div></li>
+
+                      <div id="aplicacion2">
+                          <p><strong>{{desorden2}}</strong></p>
+                          <input type="radio" name=preg3 value="Deberia devolverla" v-model="desorden2" id="no se">
+                          <label for="desorden2">Deberia devolverla</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg3 value="Deberia dejarla estar" v-model="desorden2" id="no se">
+                              <label for="desorden2">Deberia dejarla estar</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg3 value="No hacer nada" v-model="desorden2" id="no se">
+                              <label for="desorden2">No hacer nada</label>
+                          </p>
+                      </div>
+
+                      <li><br><p>Lee y completa las oraciones</p><br></li>
+
+                     <li><p>Para no perder su moneda, Martin deberia...</p></li>
+                      <div id="aplicacion3">
+                          <p><strong>{{desorden3}}</strong></p>
+                          <input type="radio" name=preg4 value="Dejar sus cosas en cualquier lado" v-model="desorden3" id="no se">
+                          <label for="desorden3">Dejar sus cosas en cualquier lado</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg4 value="No cuidar sus cosas" v-model="desorden3" id="no se">
+                              <label for="desorden3">No cuidar sus cosas</label>
+                          </p>
+                          <p>
+                              <input type="radio" name=preg4 value="Guardar mejor sus cosas" v-model="desorden3" id="no se">
+                              <label for="desorden3">Guardar mejor sus cosas</label>
+                          </p>
+                      </div>
+
+                    
+
+              </ul>
+          </ul>
+          <input type="button" value="comprobar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="comprobar();"></input>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset">
+              Resetear
+          </button>
+      </main>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+  <script src="js/vue.js"></script>
+  <script type="text/javascript" src="js/ZebraJANOHIJODEPUTA.js"></script>
+</body>
+</html>

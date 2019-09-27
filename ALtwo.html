@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/material.min.css">
+<script src="css/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise two</title>
+</head>
+<style>
+.demo-layout-transparent {
+  background: url('images/fondo.jpg') center / cover;
+  style="width:100%;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+</style>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<style>
+    p2 {
+        style="background-color:Tomato;
+    }
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Mariano y Martin</h3></div>
+	  </span>
+	  <main class="mdl-layout__content">
+	  	<img src="images/ALMartin.jpg" alt="smile face" width="400" height="400" style="float: right; padding-right:90px;">
+		<ul style = "list-style-type:square;">
+			<li><p><b>Mira la imgen y completá con la respuesta que creas correcta</b> para ayudar a Mariano.</p></li>
+				<ul style = "list-style-type:circle">
+					<div id="aplicacion4">
+					<li><p>Cuando Mariano llega a su casa y les cuenta a sus padres lo que ocurio en la escuela, ¿como crees que se sienten?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt}}</p2></p></li>
+					<input type="text" v-model="rpt">
+					</div>   
+					<div id="aplicacion5">
+					 <li><p>La maestra hablo con los padres de mariano y despues llamo a los padres de martin para una reunion. ¿como crees que se sintieron los padres de martin?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt2}}</p2></p></li>
+					<input type="text" v-model="rpt2">
+					</div>
+					<div id="aplicacion6">
+					 <li><p>Esta bien obligar a una persona a hacer algo aunque no le guste o no tenga ganas?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt3}}</p2></p></li>
+					<input type="text" v-model="rpt3">
+					</div>
+					<div id="aplicacion7">
+					 <li><p>Tenes compañeros que pase alguna situacion asi?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt4}}</p2></p></li>
+					<input type="text" v-model="rpt4">
+					</div>
+					<div id="aplicacion8">
+					 <li><p>Como podemos ayudar a mariano?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt5}}</p2></p></li>
+					<input type="text" v-model="rpt5">
+					</div>
+					<div id="aplicacion9">
+					 <li><p>Por que Mariano escribio eso en el papel?: <p2 style="background-color:rgb(37, 235, 96);">{{rpt6}}</p2></p></li>
+					<input type="text" v-model="rpt6">
+					</div>
+
+					
+
+				</form>
+				</ul>
+		</ul>
+		<a type="button" value="Juego 2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="ALone.html">Juego 1</a>. 
+		<a type="button" value="Atras" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="IndexIndex.html">Atras</a> 
+	</main>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+    <script src="js/ALvue.js"></script>
+    <script type="text/javascript" src="js/ALZebra.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="./material.min.css">
+<script src="./material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<meta charset="utf-8">
+<title>App niños</title>
+</head>
+<style>
+.demo-layout-transparent {
+  background: url('images/background.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: white;
+}
+</style>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+      	<h3>MATÍAS ES DESORDENADO A LA HORA DE TRABAJAR</h3>
+      </span>
+   	<ul style = "list-style-type:square;">
+			<li><p><b>Conversá</b> con tu maestra o maestro.</p></li>
+				<ul style = "list-style-type:circle;">
+					<li><p>Que significa ser desordenado ?</p></li>
+					<div id="aplicacion">
+					<p>{{desorden}}</p>
+					<p>
+					  <input type="radio" value="Significa tener todo mal puesto y no donde deberian estar" v-model="desorden" id="no se">
+					  <label for="desorden">Significa tener todo mal puesto y no donde deberian estar</label>
+					</p> 
+					<p>
+					  <input type="radio" value="Significa tener todo bien como deberia estar" v-model="desorden" id="no se">
+					  <label for="desorden">Significa tener todo bien como deberia estar</label>
+					</p> 
+					<p>
+					  <input type="radio" value="Significa ser un niño bueno" v-model="desorden" id="no se">
+					  <label for="desorden">Significa ser un niño bueno</label>
+					</p>    
+					</div>  
+					<li><p>Como creés que se siente la compañera de Matías ?</p></li>
+					<div id="aplicacion1">
+					<p>{{desorden1}}</p>
+					<p>
+					  <input type="radio" value="Su compañera se siente comoda con eso" v-model="desorden1" id="no se">
+					  <label for="desorden1">Su compañera se siente comoda con eso</label>
+					</p> 
+					<p>
+					  <input type="radio" value="Su compañera se siente incomoda con eso" v-model="desorden1" id="no se">
+					  <label for="desorden1">Su compañera se siente incomoda con eso</label>
+					</p>
+					<p>
+					  <input type="radio" value="A ella le da lo mismo" v-model="desorden1" id="no se">
+					  <label for="desorden1">A ella le da lo mismo</label>
+					</p>
+					</div>
+					<li><p>Qué debería hacer Matías para que su compañera se sintiera mejor ?</p></li>
+					<div id="aplicacion2">
+				  	<p>{{desorden2}}</p>
+					  <input type="radio" value="Deberia acomodar sus cosas" v-model="desorden2" id="no se">
+					  <label for="desorden2">Deberia acomodar sus cosas</label>
+					</p> 
+					<p>
+					  <input type="radio" value="Deberia dejarla estar" v-model="desorden2" id="no se">
+					  <label for="desorden2">Deberia dejarla estar</label>
+					</p>
+					<p>
+					  <input type="radio" value="No hacer nada" v-model="desorden2" id="no se">
+					  <label for="desorden2">No hacer nada</label>
+					</p>	
+					</div>
+					<li><p>Vos, sos desordenado en la escuela ? Y en tu casa ?</p></li>
+					<div id="aplicacion3">
+					<p>{{desorden3}}</p>
+					  <input type="radio" value="Soy desordenado en la escuela pero no en mi casa" v-model="desorden3" id="no se">
+					  <label for="desorden3">Soy desordenado en la escuela pero no en mi casa</label>
+					</p> 
+					<p>
+					  <input type="radio" value="No soy desordenado en la escuela pero si en mi casa" v-model="desorden3" id="no se">
+					  <label for="desorden3">No soy desordenado en la escuela pero si en mi casa</label>
+					</p>
+					<p>
+					  <input type="radio" value="Soy desordenado en la escuela y en mi casa" v-model="desorden3" id="no se">
+					  <label for="desorden3">Soy desordenado en la escuela y en mi casa</label>
+					</p>	
+					</div>
+				</ul>
+	</ul>
+	<h3>EL DESORDEN Y SUS CONSECUENCIAS</h3>
+		<ul style = "list-style-type:square;">
+			<li><p><b>Leé y completá</b> las oraciones en tu cuaderno, con lo que puede haber ocurrido en cada situación.</p></li>
+				<ul style = "list-style-type:circle">
+					<li><p>Una compañera de Matías va caminando, y como no se da cuenta de que la mochila está tirada en el piso...</p></li>
+					<li><p>Matías guarda los útiles en la cartuchera pero sin ordenarlos. Cuando llega a su casa quiere hacer los deberes y se da cuenta de que...</p></li>
+				</ul>
+		</ul>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        desorden: 'No se'
+      }
+    })
+  </script>
+  <script>
+	  var app=new Vue({
+		  el:'#aplicacion1',
+		  data:{
+			  desorden1: 'No se'
+		  }
+	  })
+</script>
+<script>
+	var app=new Vue({
+		el:'#aplicacion2',
+		data:{
+			desorden2: 'No se'
+		}
+	})
+</script>
+<script>
+	var app=new Vue({
+		el:'#aplicacion3',
+		data:{
+			desorden3: 'No se'
+		}
+	})
+</script>
+</body>
+</html>
