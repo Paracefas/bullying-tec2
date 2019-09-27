@@ -2,11 +2,7 @@
 <widget id="uk.co.compendiumdev.sloganizer" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BullyTech</name>
     <description>
-<<<<<<< HEAD
-        BullyTech
-=======
 	    BullyTech
->>>>>>> 1b887e524154bfe84b0deeb9f815db2070397b31
     </description>
     <author email="facundofiumara@gmail.com" href="">
         
