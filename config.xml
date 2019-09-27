@@ -2,12 +2,12 @@
 <widget id="uk.co.compendiumdev.sloganizer" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BullyTech</name>
     <description>
-        logo para abdala
+        BullyTech
     </description>
     <author email="facundofiumara@gmail.com" href="">
         
     </author>
-    <content src="index.html" />
+    <content src="IndexIndex.html" />
     <access origin="*" />
 	
 	<!-- versions:
