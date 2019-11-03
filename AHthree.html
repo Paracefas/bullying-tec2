@@ -1,90 +1,111 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="Zebra_Dialog-master/dist/zebra_dialog.min.js"></script>
-<link href="Zebra_Dialog-master/dist/css/materialize/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+  <link rel="icon" type="image/png" href="icons/logo.png">
 
-<script src="Zebra.js"> </script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ejercicio 3</title>
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/fondo3.jpg') center / cover;
-  style=width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
-<style>
-	div.a {
-		text-align: justify;
-	}
-</style>
-<style>
-    p2 {
-        style="background-color:Tomato;
-    }
-</style>
+
 <div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <span class="mdl-layout-title">
-			<center><div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Ejer.3 - ELEGI ENTRE LAS OPCIONES</h3></div></center>
-	  </span>
-	  <center><a href="AHindex.html"><img src="images/logo.jpg" width="100" height="100"></a></center>
+      <center><div class = "mdl-layout__title"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Ejer.3 - SEÑALA LA RESPUESTA QUE VOS CREAS CORRECTA</h3></div></center>
+    </span>
+
+    <br><br>
+
+    <p><h3><center> BENICIO COMETE UN ERROR Y PILAR SE RIE A CARCAJADAS </center></h3></p><br>
 
 <form id = "Quiz" name = "Quiz">
-        <br>
-         <div id="aplicacion9">
-        <p><h4><center>¿Cómo podemos ayudar a Pilar?</center></h4></p>
+        <br><br><br>
+      
+      <div id="aplicacion9">
+        <p><h5><center>¿Cómo podemos ayudar a Pilar?</center></h5></p>
         
          
         <span>
        
-      <center><input type="radio" name="preg9" value="Ríendonos de ella cuando se equivoque" v-model="pr9" id="ans"></center>
-      <center><label for="ans">Ríendonos de ella cuando se equivoque</label></center>
+      <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg9" value="Ríendonos de ella cuando se equivoque" v-model="pr9" id="ans"> Ríendonos de ella cuando se equivoque</button>
+      <label for="ans"></label></center>
           <br>
-      <center><input type="radio" name="preg9" value="No riéndonos ni festejando su actitud" v-model="pr9" id="ans"></center>
-      <center><label for="ans">No riéndonos ni festejando su actitud</label></center>
+      <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg9" value="No riéndonos ni festejando su actitud" v-model="pr9" id="ans"> No riéndonos ni festejando su actitud</button>
+      <label for="ans"></label></center>
 
-     <center><input type="radio" name="preg9" value="Explicandole a Pilar que todos vamos a la escuela para aprender" v-model="pr9" id="ans"></center>
-      <center><label for="ans">Explicandole a Pilar que todos vamos a la escuela para aprender</label></center>
+      <br>
+
+     <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg9" value="Explicandole a Pilar que todos vamos a la escuela para aprender" v-model="pr9" id="ans"> Explicandole a Pilar que todos vamos a la escuela para aprender</button>
+      <label for="ans"></label></center>
           <br>
           
              <br> 
 
                                 <br>
-                  <p><center><strong>Su respuesta es: {{pr9}}</strong></center></p>
+                  <p><center><strong><h5>Su respuesta es: {{pr9}}</h5></strong></center></p>
                <br> <br>
       </div>
         </span>
-
-<span>
+        
+ <span>
           <script src="js/vue.js"></script>
            
-                   <input id= "button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"type= "button"  value= "Comprobar" onClick="comprobar3();">
-    
-    <input name="restablecer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset">
-    </span>
+    <center><input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input></center> 
+
+          </ul>
+
+          <br><br><br>
+
+         <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="AIindex.html" class="btn btn-primary" role="button">Siguiente Juego</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="AHindex.html">Volver</a></center>
+
+  </span>  
+</form>
 <p><br>
 </p>
   </div>
   <script src="js/vue.js"></script>
   <script>
     var app=new Vue({
-      el: '#aplicacion9',
+      el: '#aplicacion6',
       data:{ 
-        pr9:'No se'
+        pr6:'No se'
       }
     })
   </script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion7',
+    data:{
+      pr7:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion8',
+    data:{
+      pr8:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion9',
+    data:{
+      pr9:'No se'
+    }
+  })
+</script>
+
+<script type="text/javascript" src="js/Zebra9.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>
 </body>
 </html>

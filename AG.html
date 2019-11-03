@@ -1,27 +1,12 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
-<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HAY QUE CUIDAR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="icons/logo.png">
+
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/fondo.jpg') center / cover;
-  style="width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
 <style>
 	div.a {
 		text-align: center;
@@ -30,74 +15,33 @@
 <div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <span class="mdl-layout-title">
-			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(43, 46, 217);">HAY QUE CUIDAR Y RESPETAR LAS COSAS DEL SALON Y DE LOS DEMAS</h3></div>
+			<div class = "mdl-layout__title"><h4 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">HAY QUE CUIDAR Y RESPETAR LAS COSAS DEL SALON Y DE LOS DEMÁS</h4></div>
 	  </span>
       <main class="mdl-layout__content">
-       
-          <ul style="list-style-type:square;">
-              <p><h2><b><center>LEE Y OBSERVA LOS DIBUJOS</center></b></h2></p><br>
-              <ul style="list-style-type:circle;">
-                  <li><div class="page-content"><h2>1) MAURO LE PRESTO UN LAPIZ A JULIA. AL FINAL DE LA CLASE MAURO SE OLVIDA DE PEDIRLE EL LAPIZ A JULIA, ¿QUE DEBE HACER JULIA?</h2></div></li>
+                  <li><div class="page-content"><h5>1) MAURO LE PRESTO UN LAPIZ A JULIA. AL FINAL DE LA CLASE MAURO SE OLVIDA DE PEDIRLE EL LAPIZ, ¿QUE DEBE HACER JULIA?</h5></div></li>
                   <form id="copia" name="copia">
                       <div id="aplicacion">
                            <img src="images/robarr.png" width="400" height="300" class="rounded" alt="..."></br> 
                           <p></br>
                               
-                              <h4><label for="desorden">1. DEVOLVERSELO</label></h4>
-                              <input type="radio" name=preg1 value="DEVOLVERSELO" v-model="desorden">
+                            <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="1. Devolverseló" v-model="desorden"> <h4>1. Devolverseló</h4></button>
+                              <h5><label for="desorden"></label></h5></center>
                           </p>
                           <p>
                              
-                             <h4> <label for="desorden">2. LLEVARSELO</label></h4>
-                               <input type="radio" name=preg1 value="LLEVARSELO" v-model="desorden">
-                         <p>{{desorden}}</p>
+                            <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="2. Llevarseló" v-model="desorden"> <h4>2. Llevarseló</h4></button>
+                             <h5> <label for="desorden"></label></h5></center>
+                             <br>
+                         <h5><p><strong>{{desorden}}</strong></p></h5>
                       </div>
-                      <li><div class="page-content"><p><h2>2)  JULIA NECESITA UN LAPIZ DE UN COLOR ESPECIAL PARA TERMINAR UN DIBUJO, ELLA VIO QUE MAURO TENIA ESE COLOR DE LAPIZ EN SU CARTUCHERA, ¿QUE DEBERIA HACER JULIA? </h2></p></div></li>
-                      <div id="aplicacion1">
-                          <img src="images/stolen.png" width="400" height="300" class="rounded" alt="..."></br> 
-                          <p>
-                              
-                              <h4><label for="desorden1">1. AGARRARLO SIN PERMISO</label></h4>
-                              <input type="radio" name=preg2 value="AGARRARLO SIN PERMISO" v-model="desorden1" id="no se">
-                          </p>
-
-                          <p>
-                             
-                              <h4><label for="desorden1">2. PEDIRSELO AMABLEMENTE</label></h4>
-                               <input type="radio" name=preg2 value="PEDIRSELO AMABLEMENTE" v-model="desorden1" id="no se">
-                          </p></br> 
-                        <p>{{desorden1}}</p>
-                      </div>
-                      <li><div class="page-content"><p><h2>3)  JULIA RAYA LAS MESAS DEL COLEGIO PORQUE QUIERE DEJAR SU MARCA EN EL COLEGIO, ¿ESTA BIEN?</h2></p></div></li>
-                      <div id="aplicacion2">
-                      
-            <img src="images/write.png" width="400" height="300" class="rounded" alt="..."></br> 
-                    
-                          <h4><label for="desorden2">1. SI.</label></h4>
-                                <input type="radio" name=preg3 value="SI" v-model="desorden2" id="no se">
-                          </p>
-                          <p>
-                             
-                              <h4><label for="desorden2">2. NO, ESTA MAL.</label></h4>
-                               <input type="radio" name=preg3 value="NO, ESTA MAL" v-model="desorden2" id="no se">
-                          </p>
-                          <p>
-                              
-                              <h4><label for="desorden2">3. NO SE.</label></h4>
-                              <input type="radio" name=preg3 value="NO SE" v-model="desorden2" id="no se">
-                          </p>
-                          </br>
-                              <p>{{desorden2}}</p>
-                      </div>
-                      
-                  
-              </ul>
-          </ul>
-          <input type="button" value="comprobar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="comprobar();"></input>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset">
+                      <br><br>
+          <input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input>
+          <br><br><br>
+          <button class="btn btn-outline-danger" type="reset">
               Volver a jugar
           </button> 
-          <a type="button" value="Atras" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="IndexIndex.html">Atras</a> 
+          <a href="AG2.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="games.html">Volver al Menú</a> <br><br><br>
       </main>
    	</div>
     <nav class="mdl-navigation">
@@ -109,5 +53,11 @@
 <body bgcolor="#4ebfd9">
   <script src="js/vue.js"></script>
   <script type="text/javascript" src="js/ZebraG.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+  <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+  <script type="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="js/popper.min.js"></script>
+  <script type="js/bootstrap.min.js"></script>
 </body>
 </html>

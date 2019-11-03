@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css">
+  <link rel="icon" type="image/png" href="icons/logo.png">
+
+
+<title>Ejercicio 1</title>
+</head>
+
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<center><div class = "mdl-layout__title"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">BENICIO Y PILAR</h3></div></center>
+	  </span>
+      <main class="mdl-layout__content">
+
+            <br><br><br>
+
+<p><h3><center> Ejer.1 - BENICIO COMETE UN ERROR Y PILAR SE RIE A CARCAJADAS </center></h3></p><br>
+
+<form id = "Quiz" name = "Quiz">
+        <br>
+
+        <div id="aplicacion4">     
+        <p><h5><center>4) ¿Alguna vez te pasó lo mismo que a Benicio?<center></h5></p>
+
+        <span>
+          
+      <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg4" value="Sí" v-model="pr4" id="ans"> Sí</button>
+      <label for="ans4"></label></center>
+          <br>
+      <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg4" value="No" v-model="pr4" id="ans"> No</button>
+      <label for="ans4"></label></center>
+          <br>     
+
+             <br> 
+      
+             <br> 
+                  <br>
+                  <p><center><strong><h5>Su respuesta es: {{pr4}}</h5></strong></center></p>
+                   <br> <br>
+      </div>
+            </span>
+        
+ 
+          
+
+          </ul>
+
+          <br><br><br>
+
+          <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="AHone5.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="AHindex.html">Volver</a>
+          </center> 
+    
+<p><br>
+</p>
+  </div>
+  <script src="js/vue.js"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        pr:'No se'
+      }
+    })
+  </script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion2',
+    data:{
+      pr2:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion3',
+    data:{
+      pr3:'No se'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion4',
+    data:{
+      pr4:'No me acuerdo'
+    }
+  })
+</script>
+<script>
+  var app=new Vue({
+    el:'#aplicacion5',
+    data:{
+      pr5:'Ninguna de las dos'
+    }
+  })
+</script>
+
+<script src="js/vue.js"></script>
+
+<script type="text/javascript" src="js/Zebra4.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>
+
+</body>
+</html>

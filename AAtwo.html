@@ -1,71 +1,89 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
-<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise two</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="icons/logo.png">
+
+<title>Ejercicio 2</title>
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/fondo.jpg') center / cover;
-  style="width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
-<style>
-	div.a {
-		text-align: justify;
-	}
-</style>
-<style>
-    p2 {
-        style="background-color:Tomato;
-    }
-</style>
 
 <body>
-<div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-      <span class="mdl-layout-title">
-			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">EL DESORDEN Y SUS CONSECUENCIAS</h3></div>
+      <center><span class="mdl-layout-title">
+			<div class = "mdl-layout__title"><h4 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">EL DESORDEN Y SUS CONSECUENCIAS</h4></div>
 	  </span>
 	  <main class="mdl-layout__content">
-		<img src="images/twoC.png" alt="Smiley face" width="600" height="450" style="float: right; padding-right:100px;">
-		<ul style = "list-style-type:square;">
-			<li><p><b>Leé y completá</b> las oraciones en tu cuaderno, con lo que puede haber ocurrido en cada situación.</p></li>
-				<ul style = "list-style-type:circle">
-					<div id="aplicacion4">
-					<li><p>Una compañera de Matías va caminando, y como no se da cuenta de que la mochila está tirada en el piso: <p2 style="background-color:rgb(37, 235, 96);">{{rpt}}</p2></p></li>
-					<input type="text" v-model="rpt">
-					</div>  
-					<div id="aplicacion5">
-					<li><p>Matías guarda los útiles en la cartuchera pero sin ordenarlos. Cuando llega a su casa quiere hacer los deberes y se da cuenta de que: <p2 style="background-color:rgb(37, 235, 96);">{{rpt2}}</p2></p></li>
-					<input type="text" v-model="rpt2">
+		<img src="images/twoC.png" alt="Smiley face" width="550" height="450">
+
+<br>
+
+			<p><b><h5>Leé y completá,</b> con lo que puede haber ocurrido en cada situación.</h5></p>
+			<br>
+					<div class="page-content"><p><h5>Una compañera de Matías va caminando, y como no se da cuenta de que la mochila está tirada en el piso y...</h5></p></div><br>
+					<form id="copia" name="copia">
+					<div id="aplicacion">
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="La patea sin querer" v-model="desorden"> La patea sin querer</button>
+							<label for="desorden"></label></center>
+						</p>
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="La agarra y la tira" v-model="desorden"> La agarra y la tira</button>
+							<label for="desorden"></label></center>
+						</p>
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Se burla de él" v-model="desorden"> Se burla de él</button>
+							<label for="desorden"></label></center>
+						</p>
+				<br>
+
+						<p><h5><strong>{{desorden}}</strong></h5></p><br><br>
+
 					</div>
-				</form>
-				</ul>
-		</ul>
-		<a type="button" value="Juego 2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="AAone.html">Juego 1</a>. 
-		<a type="button" value="Atras" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="IndexIndex.html">Atras</a> 
+
+					<div class="page-content"><p><h5>Matías guarda los útiles en la cartuchera pero sin ordenarlos. Cuando llega a su casa quiere hacer los deberes y se da cuenta de que...</h5></p></div><br>
+					<div id="aplicacion1">
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Perdió algunos útiles sin darse cuenta" v-model="desorden1"> Perdio algunos útiles sin darse cuenta</button>
+							<label for="desorden1"></label></center>
+						</p>
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Hizo lo correcto" v-model="desorden1"> Hizo lo correcto</button>
+							<label for="desorden1"></label></center>
+						</p>
+						<p>
+							<center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Le robaron la cartuchera" v-model="desorden1"> Le robaron la cartuchera</button>
+							<label for="desorden1"></label></center>
+						</p>
+				<br>
+
+						<p><h5><strong>{{desorden1}}</strong></h5></p><br>
+
+					</div>
+
+		<input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input> 
+<br><br><br><br>
+		  <button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>				
+		  <a type="button" value="Atras" class="btn btn-primary" href="games.html">Volver al Menú</a>
+		  <a href="AF.html" class="btn btn-primary" role="button">Siguiente Juego</a></center><br><br>
+          <br>
 	</main>
    	</div>
     <nav class="mdl-navigation">
     </nav>
   <main class="mdl-layout__content">
   </main>
-</div>
+
+
 
 <script src="js/vue.js"></script>
-<script type="text/javascript" src="js/Zebra.js"></script>
+<script type="text/javascript" src="js/ZebraAT.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>
 </body>
 </html>

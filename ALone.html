@@ -1,117 +1,53 @@
 ﻿<!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/bt.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise one</title>
+<link rel="icon" type="image/png" href="icons/logo.png">
+
+<title>Ejercicio 1</title>
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/ALfondo.jpg') center / cover;
-  style="width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
-<style>
-	div.a {
-		text-align: justify;
-	}
-</style>
+
 <div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-      <span class="mdl-layout-title">
-			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Sofia y Renata molestan a Delfina</h3></div>
+      <center><span class="mdl-layout-title">
+			<div class = "mdl-layout__title"><h4 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Sofía y Renata molestan a Delfina</h4></div>
 	  </span>
       <main class="mdl-layout__content">
-          <img src="images/ALdelfina.jpg" alt="smile face" width="400" height="400" style="float: right; padding-right:400px;">
-          <ul style="list-style-type:square;">
-              <li><p><b>Conversá</b> con tu maestra o maestro.</p></li>
-              <ul style="list-style-type:circle;">
-                      <li><div class="page-content"><p>Que estan haciendo Sofia y Renata con Delfina ?</p></div></li>
-                      <form id="copia" name="copia">
-                      <div id="aplicacion">
-                          <p>{{molestan}}</p>
-                          <p>
-                              <input type="radio" name=preg1 value="Le estan haciendo bullying" v-model="molestan">
-                              <label for="molestan">Le estan haciendo bullying</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg1 value="Las tres estan divirtiendose" v-model="molestan">
-                              <label for="molestan">Las tres estan divirtiendose</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg1 value="Estan jugando" v-model="molestan">
-                              <label for="molestan">Estan jugando</label>
-                          </p>
-                      </div>
-                      <li><div class="page-content"><p>Como podemos ayudar a Delfina?</p></div></li>
-                      <div id="aplicacion1">
-                          <p>{{molestan1}}</p>
-                          <p>
-                              <input type="radio" name=preg2 value="Avisando a un adulto responsable" v-model="molestan1" id="no se">
-                              <label for="molestan1">Avisando a un adulto responsable</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg2 value="No podemos" v-model="molestan1" id="no se">
-                              <label for="molestan1">No podemos</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg2 value="Riendonos" v-model="molestan1" id="no se">
-                              <label for="molestan1">Riendonos</label>
-                          </p>
-                      </div>
-                      <li><div class="page-content"><p>Alguna vez actuaste como Sofia y Renata ?</p></div></li>
-                      <div id="aplicacion2">
-                          <p>{{molestan2}}</p>
-                          <input type="radio" name=preg3 value="Probablemente" v-model="molestan2" id="no se">
-                          <label for="molestan2">Probablemente</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg3 value="No" v-model="molestan2" id="no se">
-                              <label for="molestan2">No</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg3 value="si" v-model="molestan2" id="no se">
-                              <label for="molestan2">si</label>
-                          </p>
-                      </div>
-                      <li><p>Alguna vez te sentiste como delfina ?</p></li>
-                      <div id="aplicacion3">
-                          <p>{{molestan3}}</p>
-                          <input type="radio" name=preg4 value="Si" v-model="molestan3" id="no se">
-                          <label for="molestan3">Si</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg4 value="No" v-model="molestan3" id="no se">
-                              <label for="molestan3">No</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg4 value="No lo recuerdo" v-model="molestan3" id="no se">
-                              <label for="molestan3">No lo recuerdo</label>
-                          </p>
-                      </div>
-              </ul>
-          </ul>
-          <input type="button" value="comprobar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="comprobar();"></input>
+          <center><img src="images/ALdelfina.jpg" alt="smile face" width="600" height="450"></center>
+              <br>
+                          <div class="page-content"><p><h5>Que están haciendo Sofía y Renata con Delfina ?</h5></p></div>
+                          <form id="l" name="l">
+                          <div id="aplicacion">
+                          
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Le están haciendo bullying" v-model="molestan"> Le están haciendo bullying</button>
+                              <label for="molestan"></label></center>
+                         <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Las tres están divirtiendose" v-model="molestan"> Las tres están divirtiendose</button>
+                              <label for="molestan"></label></center>
+                          <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Están jugando" v-model="molestan"> Están jugando</button>
+                              <label for="molestan"></label></center>
+                          
+                          <br><br>
 
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset">
-              Resetear
-          </button>
-          
-          <input type="button" value="Siguiente" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick = "location='ALtwo.html'"/>
-          </button>
+                          <p><h5>{{molestan}}</h5></p>
+
+                      </div>
+                      <br>
+
+          <center><input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input></center> 
+
+          <br><br><br>
+
+         <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="ALone2.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="ALindex.html">Volver</a></center>
 
       </main>
+      <br>
    	</div>
     <nav class="mdl-navigation">
     </nav>
@@ -121,6 +57,13 @@
 
 <body>
   <script src="js/ALvue.js"></script>
+  
+
   <script type="text/javascript" src="js/ALZebra.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="dist/zebra_dialog.min.js"></script> 
+  <script type="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="js/popper.min.js"></script>
+  <script type="js/bootstrap.min.js"></script>
 </body>
 </html>

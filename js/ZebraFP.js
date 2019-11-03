@@ -1,51 +1,29 @@
 function comprobar()
 {
-var pregunta1= document.copia.preg1.value;
-var pregunta2= document.copia.preg2.value;
-var pregunta3= document.copia.preg3.value;
-var pregunta4= document.copia.preg4.value;
+var pregunta1= document.r.preg1.value;
 var contador= 0;
 
 	if(pregunta1=="Significa no compartir nuestras cosas")
 	{
 		contador= contador + 1;
 	}
-	if(pregunta2=="Su compañera se siente incomoda con eso")
-	{
-		contador= contador + 1;
-	}
-	if(pregunta3=="Deberia prestar sus cosas")
-	{
-		contador= contador + 1;
-	}
+
 switch(contador)
 {
 	case 0:
-	$.Zebra_Dialog('<strong>Mal</strong>, no acertaste ninguna pregunta correctamente', {
+	$.Zebra_Dialog('<strong>Mal</strong>, no respondiste la pregunta correctamente', {
     'type':     'error',
     'title':    'Quiz resultado'
 });
 	break;
 case 1:
-	$.Zebra_Dialog('<strong>Bien</strong>, respondiste 1 pregunta correctamente', {
+	$.Zebra_Dialog('<strong>Muy Bien</strong>, respondiste la pregunta correctamente', {
     'type':     'confirmation',
     'title':    'Quiz resultado'
 });
 	break;
-case 2:
-	$.Zebra_Dialog('<strong>Muy bien</strong>, respondiste 2 preguntas correctamente', {
-    'type':     'confirmation',
-    'title':    'Quiz resultado'
-});
-	break;
-case 3:
-	$.Zebra_Dialog('<strong>Excelente</strong>, respondiste 3 preguntas correctamente', {
-    'type':     'confirmation',
-    'title':    'Quiz resultado'
-});
-    break;
-}
 
+}
 
 }
 

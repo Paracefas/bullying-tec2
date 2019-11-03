@@ -1,123 +1,63 @@
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="Zebra_Dialog-master/dist/zebra_dialog.min.js"></script>
-<link href="Zebra_Dialog-master/dist/css/materialize/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+  <link rel="icon" type="image/png" href="icons/logo.png">
 
-<script src="Zebra.js"> </script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ejercicio 2</title>
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/fondo3.jpg') center / cover;
-  style=width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
-<style>
-	div.a {
-		text-align: justify;
-	}
-</style>
-<style>
-    p2 {
-        style="background-color:Tomato;
-    }
-</style>
+
 <div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <span class="mdl-layout-title">
-			<center><div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Ejer.2 - SEÑALA LA RESPUESTA QUE VOS CREAS CORRECTA</h3></div></center>
+			<center><div class = "mdl-layout__title"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">Ejer.2 - SEÑALA LA RESPUESTA QUE VOS CREAS CORRECTA</h3></div></center>
 	  </span>
-	  <center><a href="AHindex.html"><img src="images/logo.jpg" width="100" height="100"></a></center>
+
+    <br><br>
+
+    <p><h3><center> BENICIO COMETE UN ERROR Y PILAR SE RIE A CARCAJADAS </center></h3></p><br>
 
 <form id = "Quiz" name = "Quiz">
-        <br>
+        <br><br><br>
          <div id="aplicacion6">
-        <p><h4><center>1) ¿Quién de los dos debería recibir un reto?</center></h4></p>
+        <p><h5><center>1) ¿Quién de los dos debería recibir un reto?</center></h5></p>
         
          
         <span>
+
+          <br><br>
        
-     <center> <input type="radio" name="preg6" value="Pilar" v-model="pr6" id="ans"></center>
-      <center><label for="ans">Pilar</label></center>
+     <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg6" value="Pilar" v-model="pr6" id="ans"> Pilar</button>
+      <label for="ans"></label></center>
           <br>
-      <center><input type="radio" name="preg6" value="Benicio" v-model="pr6" id="ans"></center>
-      <center><label for="ans">Benicio</label></center>
+      <center><button type="button" class="btn btn-outline-primary"><input type="radio" name="preg6" value="Benicio" v-model="pr6" id="ans"> Benicio</button>
+      <label for="ans"></label></center>
           <br>
           
              <br> 
 
                                 <br>
-                  <p><center><strong>Su respuesta es: {{pr6}}</strong></center></p>
+                  <p><center><strong><h5>Su respuesta es: {{pr6}}</h5></strong></center></p>
                <br> <br>
       </div>
         </span>
-
-        <div id="aplicacion7"> 
-        <p><h4><center>2) Benito se siente...</center></h4></p>
         
-         
-            <span>
-          
-      <center><input type="radio" name="preg7" value="Enojado" v-model="pr7" id="ans"></center>
-      <center><label for="ans2">Enojado</label></center>
-          <br>
-      <center><input type="radio" name="preg7" value="Avergonzado" v-model="pr7" id="ans"></center>
-      <center><label for="ans2">Avergonzado</label></center>
-          <br>     
-      <center><input type="radio" name="preg7" value="Triste" v-model="pr7" id="ans"></center>
-      <center><label for="ans2">Triste</label></center>
-             <br> 
-      
-             <br> 
-                  <br>  
-                  <p><center><strong>Su respuesta es: {{pr7}}</strong></center></p>
-                   <br> <br>
-      </div>
-            </span>
-
-        <div id="aplicacion8">     
-        <p><h4><center>3) ¿Con quién se enojó la maestra?</h4></p>
-
-        <span>
-          
-      <center><input type="radio" name="preg8" value="Con el nene" v-model="pr8" id="ans"></center>
-      <center><label for="ans3">Con el nene</label></center>
-          <br>
-      <center><input type="radio" name="preg8" value="Con la nena" v-model="pr8" id="ans"></center>
-      <center><label for="ans3">Con la nena</label></center>
-          <br>     
-
-             <br> 
-      
-             <br> 
-                  <br>
-                  <p><<center><strong>Su respuesta es: {{pr8}}</strong></center></p>
-                   <br> <br>
-      </div>
-            </span>
-        
-
-<p>
-<a role="button" href="AHthree.html" rel="next" class="mdl-button mdl-js-button mdl-js-ripple-effect"style='float:right'>Ejercicio 3</a>
-</p>
  <span>
           <script src="js/vue.js"></script>
            
-                  <input id= "button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"type= "button"  value= "Comprobar" onClick="comprobar2();"></input>
-    
-    <input name="restablecer" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset"></input>
+    <center><input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input></center> 
+
+          </ul>
+
+          <br><br><br>
+
+         <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="AHtwo2.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="AHindex.html">Volver</a></center>
+
   </span>  
 </form>
 <p><br>
@@ -148,5 +88,12 @@
     }
   })
 </script>
+
+<script type="text/javascript" src="js/Zebra6.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>
 </body>
 </html>

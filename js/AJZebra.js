@@ -1,54 +1,29 @@
 function comprobar()
 {
-var pregunta1= document.copia.preg1.value;
-var pregunta2= document.copia.preg2.value;
-var pregunta3= document.copia.preg3.value;
-var pregunta4= document.copia.preg4.value;
+var pregunta1= document.t.preg1.value;
 var contador= 0;
 
-	if(pregunta1=="Deberia darle una oportunidad a Juan"||pregunta1=="Deberia buscar a alguien con quien jugar")
+	if(pregunta1=="Debería darle una oportunidad a Juan")
 	{
 		contador= contador + 1;
 	}
-	if(pregunta2=="Deberia decirle a Lucas que piensa")
-	{
-		contador= contador + 1;
-	}
-	if(pregunta3=="Deberia juntarse a jugar con otros chicos")
-	{
-		contador= contador + 1;
-	}
-	if(pregunta4=="Deberia averiguar porque no se divierten"||pregunta4=="Deberia decirle a un profe"){
-		contador= contador + 1; 
-	}
+
 switch(contador)
 {
 	case 0:
-	$.Zebra_Dialog('<strong>Mal</strong>, Tener en cuenta a los demas es importante. Puede que te lleves mal con alguien pero todos tienen el derecho participar', {
+	$.Zebra_Dialog('<strong>Mal</strong>, no respondiste la pregunta correctamente', {
     'type':     'error',
     'title':    'Quiz resultado'
 });
 	break;
 case 1:
-	$.Zebra_Dialog('<strong>Bien</strong>, Es importante ponerse en la posicion de los demas. Entender las reglas de convivencia y recordar ponerse en la posicion de otros hace que te lleves mejor con otros', {
+	$.Zebra_Dialog('<strong>Muy Bien</strong>, respondiste la pregunta correctamente', {
     'type':     'confirmation',
     'title':    'Quiz resultado'
 });
 	break;
-case 2:
-	$.Zebra_Dialog('<strong>Muy bien</strong>, Puede que alguna regla en la sala no te gusta o no entiendes porque sirve. Algunas cosas se entiende con el tiempo y es importante seguirlas caundo aun se puede mejorar', {
-    'type':     'confirmation',
-    'title':    'Quiz resultado'
-});
-	break;
-case 3:
-	$.Zebra_Dialog('<strong>Excelente</strong>, Recorda simepre ayudar a tus compañeros. Puede que no lo notes pero seguro agradecen que se lleven bien', {
-    'type':     'confirmation',
-    'title':    'Quiz resultado'
-});
-    break;
-}
 
+}
 
 }
 

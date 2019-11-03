@@ -1,124 +1,84 @@
 ﻿<!doctype html>
 <html>
 <head>
-<link rel="stylesheet" href="css/material.min.css">
-<script src="css/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
-<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exercise one</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="icons/logo.png">
+
+<title>Ejercicio 1</title>
 </head>
-<style>
-.demo-layout-transparent {
-  background: url('images/fondo.jpg') center / cover;
-  width:100%;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  color: white;
-}
-</style>
-<style>
-	div.a {
-		text-align: justify;
-	}
-</style>
 
 <body>
+
+
 <div class = "a">
 <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <span class="mdl-layout-title">
-			<div class = "mdl-layout__title" style = "padding-left:25px"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">MATÍAS ES DESORDENADO A LA HORA DE TRABAJAR</h3></div>
+			<center><h4 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">MATÍAS ES DESORDENADO A LA HORA DE TRABAJAR</h4></center>
 	  </span>
       <main class="mdl-layout__content">
-          <img src="images/oneC.png" alt="Smiley face" width="300" height="450" style="float: right; padding-right:400px;">
-          <ul style="list-style-type:square;">
-              <li><p><b>Conversá</b> con tu maestra o maestro.</p></li>
-              <ul style="list-style-type:circle;">
-                  <li><div class="page-content"><p><h3>¿ Qué significa ser desordenado ?</h3></p></div></li>
+          <center><img src="images/oneC.png"  width="300" height="450"></center>
+
+          <br><br>
+
+         <center>
+
+<br>
+
+                  <div class="page-content"><p><h5>¿ Qué significa ser desordenado ?</h5></p></div>
                   <form id="copia" name="copia">
                       <div id="aplicacion">
+
+                          <p>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Significa tener todo mal puesto y no donde deberían estar" v-model="desorden"> Significa tener todo mal puesto y no donde deberían estar</button>
+                              <label for="desorden"></label></center>
+                          </p>
+                          <p>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Significa tener todo bien como debería estar" v-model="desorden"> Significa tener todo bien como debería estar</button>
+                              <label for="desorden"></label></center>
+                          </p>
+                          <p>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Significa ser un niño bueno" v-model="desorden"> Significa ser un niño bueno</button>
+                              <label for="desorden"></label></center>
+                          </p>
+
+<br>
                           <p><h5><strong>{{desorden}}</strong></h5></p>
-                          <p>
-                              <input type="radio" name=preg1 value="Significa tener todo mal puesto y no donde deberian estar" v-model="desorden">
-                              <label for="desorden">Significa tener todo mal puesto y no donde deberian estar</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg1 value="Significa tener todo bien como deberia estar" v-model="desorden">
-                              <label for="desorden">Significa tener todo bien como deberia estar</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg1 value="Significa ser un niño bueno" v-model="desorden">
-                              <label for="desorden">Significa ser un niño bueno</label>
-                          </p>
+
                       </div>
-                      <li><div class="page-content"><p><h3>¿ Cómo creés que se siente la compañera de Matías ?</h3></p></div></li>
-                      <div id="aplicacion1">
-                          <p><h5><strong>{{desorden1}}</strong></h5></p>
-                          <p>
-                              <input type="radio" name=preg2 value="Su compañera se siente comoda con eso" v-model="desorden1" id="no se">
-                              <label for="desorden1">Su compañera se siente comoda con eso</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg2 value="Su compañera se siente incomoda con eso" v-model="desorden1" id="no se">
-                              <label for="desorden1">Su compañera se siente incomoda con eso</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg2 value="A ella le da lo mismo" v-model="desorden1" id="no se">
-                              <label for="desorden1">A ella le da lo mismo</label>
-                          </p>
-                      </div>
-                      <li><div class="page-content"><p><h3>¿ Qué debería hacer Matías para que su compañera se sintiera mejor ?</h3></p></div></li>
-                      <div id="aplicacion2">
-                          <p><h5><strong>{{desorden2}}</strong></h5></p>
-                          <input type="radio" name=preg3 value="Deberia acomodar sus cosas" v-model="desorden2" id="no se">
-                          <label for="desorden2">Deberia acomodar sus cosas</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg3 value="Deberia dejarla estar" v-model="desorden2" id="no se">
-                              <label for="desorden2">Deberia dejarla estar</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg3 value="No hacer nada" v-model="desorden2" id="no se">
-                              <label for="desorden2">No hacer nada</label>
-                          </p>
-                      </div>
-                      <li><p><h3>Vos, ¿ sos desordenado en la escuela ? ¿ Y en tu casa ?</h3></p></li>
-                      <div id="aplicacion3">
-                          <p><h5><strong>{{desorden3}}</strong></h5></p>
-                          <input type="radio" name=preg4 value="Soy desordenado en la escuela pero no en mi casa" v-model="desorden3" id="no se">
-                          <label for="desorden3">Soy desordenado en la escuela pero no en mi casa</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg4 value="No soy desordenado en la escuela pero si en mi casa" v-model="desorden3" id="no se">
-                              <label for="desorden3">No soy desordenado en la escuela pero si en mi casa</label>
-                          </p>
-                          <p>
-                              <input type="radio" name=preg4 value="Soy desordenado en la escuela y en mi casa" v-model="desorden3" id="no se">
-                              <label for="desorden3">Soy desordenado en la escuela y en mi casa</label>
-                          </p>
-                      </div>
-              </ul>
+           
+<br><br>
+
+
+               <input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input> 
+
           </ul>
-          <input type="button" value="comprobar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onClick="comprobar();"></input>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="reset">
-              Volver a jugar
-          </button>
-          <a type="button" value="Juego 2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" href="AAtwo.html">Juego 2</a>. 
-          <a type="button" value="Atras" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="IndexIndex.html">Atras</a> 
+
+          <br><br><br>
+
+          <button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="AAone2.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="AAindex.html">Volver</a>
+          </center> 
+          <br>
       </main>
    	</div>
+
     <nav class="mdl-navigation">
     </nav>
   <main class="mdl-layout__content">
   </main>
 </div>
 
+
 <script src="js/vue.js"></script>
-<script type="text/javascript" src="js/Zebra.js"></script>
+<script type="text/javascript" src="js/ZebraA.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>
 </body>
 </html>

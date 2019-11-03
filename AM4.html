@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/bt.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<link rel="icon" type="image/png" href="icons/logo.png">
+
+<title>Ejerciocio Uno</title>
+</head>
+
+<div class = "a">
+<center><div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <span class="mdl-layout-title">
+			<div class = "mdl-layout__title"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">A MARTINA LE HECHAN LA CULPA DE TODO</h3></div>
+	  </span>
+      <main class="mdl-layout__content">
+          <img src="images/AM24.jpg" width="500" height="450">
+            <br><br>
+                  <p><h5>Vos, que harias para ayudar a Martina?</h5></p>
+                  <form id="m" name="m">
+                      <div id="aplicacion3">
+                          
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg4 value="Convencioendola de que se porte bien en clase" v-model="desorden3" id="no se"> Convencioendola de que se porte bien en clase</button>
+                              <label for="desorden3"></label></center>
+                         <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg4 value="Echarle la culpa cuando se porte mal" v-model="desorden3" id="no se"> Echarle la culpa cuando se porte mal</button>
+                              <label for="desorden3"></label></center>
+                          <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg4 value="No hacer nada al respecto" v-model="desorden3" id="no se"> No hacer nada al respecto </button>
+                              <label for="desorden3"></label></center>
+                          
+                          <br><br>
+                          <p><b>{{desorden3}}</b></p>
+                          <br>
+
+                      </div>
+                      <br>
+ 
+         <center><input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input></center> 
+
+          <br><br><br>
+
+         <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="ANindice.html" class="btn btn-primary" role="button">Siguiente Juego</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="games.html">Volver</a></center>
+          <br>
+      </main>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+  <script src="js/vue.js"></script>
+  
+  <script type="text/javascript" src="js/ZebraAM4.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+  <script type="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="js/popper.min.js"></script>
+  <script type="js/bootstrap.min.js"></script>
+</body>
+</html>

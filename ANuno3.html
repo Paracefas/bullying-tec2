@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="css/bt.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<link rel="icon" type="image/png" href="icons/logo.png">
+
+<title>Ejercicio 1</title>
+</head>
+<style>
+	div.a {
+		text-align: justify;
+	}
+</style>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+      <center><span class="mdl-layout-title">
+			<div class = "mdl-layout__title"><h3 style="color:rgb(15, 30, 32); border:2px solid DodgerBlue; background-color:rgb(37, 235, 96);">PROBLEMAS DE COMPORTAMIENTO</h3></div>
+	  </span>
+      <main class="mdl-layout__content">
+          <img src="images/B26.jpg"  width="500" height="450">
+          <p><h5>A Tomás le cuesta portarse bien, Lautaro se aprovecha y lo manda a hacer lío.</h5></p>
+          <br>
+                  <form id="copia" name="copia">
+                      <div class="page-content"><p><h5>¿Qué debería hacer Lautaro?</h5></p></div>
+                      <div id="aplicacion">
+                          
+                        <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Enseñarle como portarse bien" v-model="desorden"> Enseñarle como portarse bien</button>
+                              <label for="desorden"></label></center>
+                          <br>
+                        <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="Seguir usandolo" v-model="desorden"> Seguir usandolo</button>
+                              <label for="desorden"></label></center>
+                          <br>
+                        <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg1 value="No hacer nada" v-model="desorden"> No hacer nada</button>
+                              <label for="desorden"></label></center>
+                          
+                          <br><br>
+                          <p><b><h5>{{desorden}}</h5></b></p>
+
+                      </div>
+          <br><br>
+                      <input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input> 
+                      <br><br><br>
+          <button class="btn btn-outline-danger" type="reset">
+              Volver a jugar
+          </button>
+          <a href="ANdos.html" class="btn btn-primary" role="button">Juego 2</a> 
+          <a type="button" value="Atras" class="btn btn-primary" href="ANindice.html">Volver</a><center> 
+            <br><br>
+      </main>
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+
+<body>
+  <script src="js/vue.js"></script>
+  <script type="text/javascript" src="js/SourceAn3.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+  <link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+  <script type="js/jquery-3.3.1.slim.min.js"></script>
+  <script type="js/popper.min.js"></script>
+  <script type="js/bootstrap.min.js"></script>
+</body>
+</html>

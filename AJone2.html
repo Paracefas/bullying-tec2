@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/bt.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<link href="dist/css/flat/zebra_dialog.min.css" rel="stylesheet" type="text/css" >
+<link rel="icon" type="image/png" href="icons/logo.png">
+<title>Ejercicio 1</title>
+</head>
+<div class = "a">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <span class="mdl-layout-title">
+		 <center><div class = "mdl-layout__title"><h3 style="color:rgb(0, 10, 50); border:2px solid DodgerBlue; background-color:rgb(70, 104, 250);">ELEGÍ ENTRE LAS OPCIONES</h3></div>
+	  </span>
+    <br><br>
+      <main class="mdl-layout__content">
+                <br>
+                 <div class="page-content"><p><h5>Matías ignora los consejos de Lucas porque se cansó de escucharlos</h5></p></div>
+                 <form id="t" name="t">
+                      <div id="aplicacion1">
+                          
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Debería evitar a Lucas" v-model="desorden1" id="no se">Debería evitar a Lucas</button>
+                              <label for="desorden1"></label></center>
+                          <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Debería decirle a Lucas que piensa" v-model="desorden1" id="no se">Debería decirle a Lucas que piensa</button>
+                              <label for="desorden1"></label></center>
+                          <br>
+                              <center><button type="button" class="btn btn-outline-primary"><input type="radio" name=preg2 value="Debería quejarse con un mayor" v-model="desorden1" id="no se">Debería quejarse con alguien</button>
+                              <label for="desorden1"></label></center>
+                          
+                          <br><br>
+                              <p><b><h5>"{{desorden1}}"</h5></b></p>
+
+                      </div>
+
+          <br><br><br>
+          <center><input type="button" value="Comprobar" class="btn btn-outline-success btn-lg" onClick="comprobar();"></input></center> 
+
+          <br><br><br>
+
+         <center><button class="btn btn-outline-danger" type="reset"> Volver a jugar </button>
+          <a href="AJone3.html" class="btn btn-primary" role="button">Siguiente</a>
+          <a type="button" value="Atras" class="btn btn-primary" href="AJindex.html">Volver</a></center>
+      </main>
+
+   	</div>
+    <nav class="mdl-navigation">
+    </nav>
+  <main class="mdl-layout__content">
+  </main>
+</div>
+<body>
+<script src="js/vue.js"></script>
+
+<script type="text/javascript" src="js/AJZebra2.js"></script>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+<script type="js/jquery-3.3.1.slim.min.js"></script>
+<script type="js/popper.min.js"></script>
+<script type="js/bootstrap.min.js"></script>  
+</body>
+</html>
